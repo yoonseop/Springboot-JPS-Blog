@@ -1,0 +1,36 @@
+spring:
+  datasource:
+##############################################
+#    mariadb connector
+#    driver-class-name: org.mariadb.jdbc.Driver
+
+##############################################
+#    mysql connector
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Seoul&useSSL=false
+
+##############################################
+#    username: cos
+#    password: cos1234
+
+##############################################
+#hikari 설정    hikari:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      jdbc-url: jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Seoul&useSSL=false      maximum-pool-size: 20
+      username: cos
+      password: cos1234      
+
+
+##############################################
+#tomcat dbcp 설정
+###############################################    type: org.apache.tomcat.jdbc.pool.DataSource#    tomcat:#     initial-size: 15
+#     default-auto-commit: false
+
+##############################################
+#common dbcp2 설정
+##############################################
+#    type: org.apache.commons.dbcp2.BasicDataSource#    dbcp2:#      initial-size: 10
+#      max-total: 10
+#      max-idle: 10
+#      default-auto-commit: true 
+
